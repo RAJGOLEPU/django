@@ -2,8 +2,7 @@ services:
   - type: web
     name: django-docker-app
     env: docker
-    region: oregon
-    repo: https://github.com/RAJGOLEPU/django
+    repo: https://github.com/YOUR_USERNAME/YOUR_REPO_NAME
     branch: main
     dockerfilePath: ./Dockerfile
     envVars:
@@ -11,4 +10,5 @@ services:
         generateValue: true
       - key: DEBUG
         value: "False"
-    plan: free
+      - key: ALLOWED_HOSTS
+        value: your-app-name.onrender.com
