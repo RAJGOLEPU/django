@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: django-docker-app
+    env: docker
+    region: oregon
+    repo: https://github.com/RAJGOLEPU/django
+    branch: main
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: DJANGO_SECRET_KEY
+        generateValue: true
+      - key: DEBUG
+        value: "False"
+    plan: free
