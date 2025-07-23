@@ -2,36 +2,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Django Site</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Django App</title>
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <script defer src="{% static 'js/script.js' %}"></script>
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>Welcome to My Django Project! 🚀</h1>
-            <p>This is a landing page built with HTML, CSS & JS — all served via Django.</p>
-            <p>I created this project after our university class introduced Django today! 🙌</p>
-            <a href="https://github.com/RAJGOLEPU/django" target="_blank" class="btn">View on GitHub</a>
+        <nav class="navbar">
+            <div class="logo">MyDjango</div>
+            <a href="https://github.com/RAJGOLEPU/django" class="nav-link" target="_blank">GitHub ↗</a>
+        </nav>
+        <div class="hero">
+            <h1>Clean. Simple. Django.</h1>
+            <p>A beautifully crafted web app powered by Django and Docker, deployed on Render.</p>
+            <a href="https://github.com/RAJGOLEPU/django" class="cta-button" target="_blank">View on GitHub</a>
         </div>
     </header>
 
     <section class="about">
         <div class="container">
-            <h2>🛠 How I Built It</h2>
-            <ul>
-                <li>💻 Developed using <strong>Django</strong></li>
-                <li>🐳 Containerized with <strong>Docker</strong></li>
-                <li>🚀 Deployed on <strong>Render</strong></li>
-                <li>👨‍💻 Edited inside <strong>GitHub Codespaces</strong></li>
-            </ul>
+            <h2>About This Project</h2>
+            <p>
+                This project was built using Django, containerized with Docker, and deployed seamlessly to Render.
+                It’s designed to be developer-friendly, elegant, and responsive on all devices.
+            </p>
+            <p>
+                Whether you're learning Django or looking to deploy quickly, this is the perfect starting point.
+            </p>
         </div>
     </section>
 
     <footer>
-        <p>Made with ❤️ by Me | © 2025</p>
+        <p>© {{ now|date:"Y" }} MyDjango. Crafted with care.</p>
     </footer>
+
+    <script src="{% static 'js/script.js' %}"></script>
 </body>
 </html>
