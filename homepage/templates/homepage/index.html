@@ -2,43 +2,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Project</title>
-  <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Django Dockerized - Modern Web App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
-  <header class="hero">
-    <nav class="nav">
-      <div class="logo">YourProject</div>
-      <a href="https://github.com/RAJGOLEPU/django" class="repo-link" target="_blank">GitHub</a>
-    </nav>
-    <div class="hero-content">
-      <h1>A Clean Django Starter</h1>
-      <p>Designed with minimalism, inspired by Apple.</p>
-      <a href="#features" class="btn">Explore Features ↓</a>
-    </div>
-  </header>
 
-  <section id="features" class="features">
-    <div class="feature-card">
-      <h2>🚀 Fast Setup</h2>
-      <p>Start building with Django, Docker, and Render instantly.</p>
-    </div>
-    <div class="feature-card">
-      <h2>🧑‍💻 Codespaces Ready</h2>
-      <p>Develop straight from the browser using GitHub Codespaces.</p>
-    </div>
-    <div class="feature-card">
-      <h2>🌐 Deployed on Render</h2>
-      <p>Live in seconds. Automatic builds from your repo.</p>
-    </div>
-  </section>
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Deploy with Confidence. Develop with Speed.</h1>
+            <p class="hero-subtitle">
+                A modern Django starter kit, containerized with Docker and ready for seamless deployment on Render. Launch your next big idea in minutes, not weeks.
+            </p>
+            <a href="https://github.com/RAJGOLEPU/django" target="_blank" rel="noopener noreferrer" class="cta-button">View on GitHub</a>
+        </div>
+    </header>
 
-  <footer class="footer">
-    <p>© 2025 Your Name. Built with ❤️ and Django.</p>
-  </footer>
+    <main>
+        <section id="features" class="features-section">
+            <div class="container">
+                <h2 class="section-title">Why Use This Template?</h2>
+                <div class="features-grid">
+                    <div class="feature-card animate-on-scroll">
+                        <div class="feature-icon">🚀</div>
+                        <h3 class="feature-title">Dockerized Environment</h3>
+                        <p class="feature-description">Get up and running instantly with a fully containerized setup using Docker and Docker Compose for consistent development.</p>
+                    </div>
+                    <div class="feature-card animate-on-scroll">
+                        <div class="feature-icon">☁️</div>
+                        <h3 class="feature-title">Render Ready</h3>
+                        <p class="feature-description">Deploy to the cloud effortlessly. This project is pre-configured for a smooth, one-click deployment on Render.com.</p>
+                    </div>
+                    <div class="feature-card animate-on-scroll">
+                        <div class="feature-icon">💻</div>
+                        <h3 class="feature-title">Responsive Design</h3>
+                        <p class="feature-description">A clean and modern interface that looks stunning on all devices, from large desktops to small mobile screens.</p>
+                    </div>
+                     <div class="feature-card animate-on-scroll">
+                        <div class="feature-icon">🧩</div>
+                        <h3 class="feature-title">Clean Codebase</h3>
+                        <p class="feature-description">Built on Django 5.2 with a logical project structure that's easy to understand, maintain, and extend.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <script src="{% static 'js/script.js' %}"></script>
+        <section id="tech-stack" class="tech-stack-section">
+            <div class="container">
+                <h2 class="section-title">Powered by Modern Technology</h2>
+                <div class="tech-logos">
+                    <img src="https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white" alt="Django" class="animate-on-scroll">
+                    <img src="https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" class="animate-on-scroll">
+                    <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" alt="Python" class="animate-on-scroll">
+                    <img src="https://img.shields.io/badge/render-%46E3B7.svg?style=for-the-badge&logo=render&logoColor=white" alt="Render" class="animate-on-scroll">
+                    <img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" class="animate-on-scroll">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; {% now "Y" %} Golepu Raj Kumar. Feel free to fork, modify & share!</p>
+            <p>Built with ❤️ and modern tools.</p>
+        </div>
+    </footer>
+
+    <script src="{% static 'js/script.js' %}"></script>
 </body>
 </html>
