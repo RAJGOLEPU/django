@@ -2,41 +2,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Django App</title>
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Project</title>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}" />
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="logo">MyDjango</div>
-            <a href="https://github.com/RAJGOLEPU/django" class="nav-link" target="_blank">GitHub ↗</a>
-        </nav>
-        <div class="hero">
-            <h1>Clean. Simple. Django.</h1>
-            <p>A beautifully crafted web app powered by Django and Docker, deployed on Render.</p>
-            <a href="https://github.com/RAJGOLEPU/django" class="cta-button" target="_blank">View on GitHub</a>
-        </div>
-    </header>
+  <header class="hero">
+    <nav class="nav">
+      <div class="logo">YourProject</div>
+      <a href="https://github.com/RAJGOLEPU/django" class="repo-link" target="_blank">GitHub</a>
+    </nav>
+    <div class="hero-content">
+      <h1>A Clean Django Starter</h1>
+      <p>Designed with minimalism, inspired by Apple.</p>
+      <a href="#features" class="btn">Explore Features ↓</a>
+    </div>
+  </header>
 
-    <section class="about">
-        <div class="container">
-            <h2>About This Project</h2>
-            <p>
-                This project was built using Django, containerized with Docker, and deployed seamlessly to Render.
-                It’s designed to be developer-friendly, elegant, and responsive on all devices.
-            </p>
-            <p>
-                Whether you're learning Django or looking to deploy quickly, this is the perfect starting point.
-            </p>
-        </div>
-    </section>
+  <section id="features" class="features">
+    <div class="feature-card">
+      <h2>🚀 Fast Setup</h2>
+      <p>Start building with Django, Docker, and Render instantly.</p>
+    </div>
+    <div class="feature-card">
+      <h2>🧑‍💻 Codespaces Ready</h2>
+      <p>Develop straight from the browser using GitHub Codespaces.</p>
+    </div>
+    <div class="feature-card">
+      <h2>🌐 Deployed on Render</h2>
+      <p>Live in seconds. Automatic builds from your repo.</p>
+    </div>
+  </section>
 
-    <footer>
-        <p>© {{ now|date:"Y" }} MyDjango. Crafted with care.</p>
-    </footer>
+  <footer class="footer">
+    <p>© 2025 Your Name. Built with ❤️ and Django.</p>
+  </footer>
 
-    <script src="{% static 'js/script.js' %}"></script>
+  <script src="{% static 'js/script.js' %}"></script>
 </body>
 </html>
