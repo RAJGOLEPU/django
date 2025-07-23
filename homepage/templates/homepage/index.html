@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Django Site</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <script defer src="{% static 'js/script.js' %}"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Welcome to My Django Project! 🚀</h1>
+            <p>This is a landing page built with HTML, CSS & JS — all served via Django.</p>
+            <p>I created this project after our university class introduced Django today! 🙌</p>
+            <a href="https://github.com/RAJGOLEPU/django" target="_blank" class="btn">View on GitHub</a>
+        </div>
+    </header>
+
+    <section class="about">
+        <div class="container">
+            <h2>🛠 How I Built It</h2>
+            <ul>
+                <li>💻 Developed using <strong>Django</strong></li>
+                <li>🐳 Containerized with <strong>Docker</strong></li>
+                <li>🚀 Deployed on <strong>Render</strong></li>
+                <li>👨‍💻 Edited inside <strong>GitHub Codespaces</strong></li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>Made with ❤️ by Me | © 2025</p>
+    </footer>
+</body>
+</html>
